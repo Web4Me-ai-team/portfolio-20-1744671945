@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陈小楠's Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="profile/11.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="陈小楠">陈小楠</h1>
+          <p class="title">学生</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
+      </div>
+      <div class="sidebar-info_more" data-sidebar-more>
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:15527841377@163.com" class="contact-link">15527841377@163.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+15527841377" class="contact-link">155-2784-1377</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>湖北省武汉市</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Teaching</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Awards</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <h2>👋 Hi, I'm 陈小楠</h2>
+          <p>陈小楠是一名具有扎实数据分析和编程技能的学生，拥有丰富的项目经验和多项国家级奖项。她在团队协作、数据采集与处理、知识图谱构建、以及产品设计方面表现出色，具备良好的数学和统计学思维。</p>
+        </section>
+      </article>
+
+      <article class="education" data-page="education">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="book-outline"></ion-icon> Education
+          </h2>
+        </header>
+        <section class="timeline" id="education-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">华中师范大学</h4>
+              <span class="graduation-date">2025.6</span>
+              <p class="degree">本科</p>
+              <p class="field">大数据管理与应用</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">武汉大学</h4>
+              <span class="graduation-date">2027.6</span>
+              <p class="degree">硕士</p>
+              <p class="field">图书情报</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="research" data-page="research">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="flask-outline"></ion-icon> Work Experience
+          </h2>
+        </header>
+        <section class="timeline" id="experience-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">文体部分负责人</h4>
+              <span class="duration"></span>
+              <p class="institution">院学生会</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>负责策划年级活动，比如校级“信管杯”三人制篮球赛、研合办羽毛球赛等。</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="construct-outline"></ion-icon> Projects
+          </h2>
+        </header>
+        <section class="timeline" id="projects-container">
+          <ol class="timeline-list">
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">富媒体数字出版内容组织与知识服务重点实验室开放基金项目</h4>
+              <p class="project-duration"></p>
+              <p class="project-description">负责前期专利、新闻、公众号和学术论文的数据采集与预处理，主题识别与聚类。</p>
+            </li>
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">基于知识图谱的音乐类“非遗”资源聚合与传播研究——以剑川白曲为例</h4>
+              <p class="project-duration"></p>
+              <p class="project-description">负责前期数据收集与调研、知识图谱的构建以及网页设计，项目优秀结项。</p>
+            </li>
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">图书馆员人工智能焦虑量表构建研究</h4>
+              <p class="project-duration"></p>
+              <p class="project-description">负责扎根理论编码、编写问卷、收集问卷数据并进行用SPSS进行信效度检验、AMOS构建结构方程模型，撰写论文全部内容。</p>
+            </li>
+            <li class="timeline-item project-item">
+              <h4 class="h4 project-title">“智慧小典”刷题APP</h4>
+              <p class="project-duration"></p>
+              <p class="project-description">用Swift语言开发的一款刷题类APP，进行需求调研和分析，采用MVVM架构模式进行开发，包含丰富题目，提供拍照搜题及推荐功能。</p>
+              <div class="project-tech">
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">MVVM</span>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="skills" data-page="skills">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="build-outline"></ion-icon> Technical Skills
+          </h2>
+        </header>
+        <section class="skills-container" id="technical-skills-container">
+          <div class="skills-group">
+            <h3 class="skills-category">Technical Skills</h3>
+            <ul class="skills-list">
+              <li class="skill-item">Java</li>
+              <li class="skill-item">Python</li>
+              <li class="skill-item">Html5+CSS+JS</li>
+              <li class="skill-item">C语言</li>
+              <li class="skill-item">SQL语言</li>
+              <li class="skill-item">Linux</li>
+              <li class="skill-item">Word</li>
+              <li class="skill-item">Excel</li>
+              <li class="skill-item">PPT</li>
+              <li class="skill-item">FineBI</li>
+              <li class="skill-item">Tableau</li>
+              <li class="skill-item">SPSS</li>
+              <li class="skill-item">PS</li>
+              <li class="skill-item">剪映</li>
+              <li class="skill-item">PR</li>
+              <li class="skill-item">Sketch</li>
+              <li class="skill-item">Axure</li>
+              <li class="skill-item">XMind</li>
+              <li class="skill-item">Processon</li>
+              <li class="skill-item">BoardMix</li>
+              <li class="skill-item">Visio</li>
+              <li class="skill-item">MockingBot</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <article class="awards" data-page="awards">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="trophy-outline"></ion-icon> Honors & Awards
+          </h2>
+        </header>
+        <section class="timeline" id="awards-container">
+          <ol class="timeline-list">
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">国家奖学金</h4>
+              <p class="award-year">2024.09</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">连续三年校三好学生</h4>
+              <p class="award-year">2022.09-2024.09</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">国家励志奖学金</h4>
+              <p class="award-year">2023.09</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">逸华励志奖学金</h4>
+              <p class="award-year">2022.09</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">校先进个人</h4>
+              <p class="award-year">2024.09</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">第十五届全国大学生数学竞赛国家级二等奖</h4>
+              <p class="award-year">2024.04</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">三创赛国家级二等奖</h4>
+              <p class="award-year">2024.07</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">第五届全国大学生智慧商务大数据创新应用大赛国赛一等奖</h4>
+              <p class="award-year">2024.06</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">全国计算机移动应用创新赛华中赛区三等奖</h4>
+              <p class="award-year">2022.08</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    // Toggle sidebar contacts
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+    const sidebarMore = document.querySelector("[data-sidebar-more]");
+
+    sidebarBtn.addEventListener("click", function () {
+      sidebarMore.classList.toggle("active");
+      sidebarBtn.querySelector("span").textContent = sidebarMore.classList.contains("active") ? "Hide Contacts" : "Show Contacts";
+    });
+
+    // Handle navigation links
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+        this.classList.add("active");
+
+        const pageName = this.textContent.toLowerCase().trim();
+        pages.forEach(page => page.classList.remove("active"));
+        const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+        if (targetPage) {
+          targetPage.classList.add("active");
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
